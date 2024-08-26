@@ -2,32 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: yb-vbold;
+    src: url(../public/fonts/YekanBakh/YekanBakh-Heavy.ttf);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: yb-bold;
+    src: url(../public/fonts/YekanBakh/YekanBakh-Bold.ttf);
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: yb-sbold;
+    src: url(../public/fonts/YekanBakh/YekanBakh-Regular.ttf);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: yb-reg;
+    src: url(../public/fonts/YekanBakh/YekanBakh-Light.ttf);
+}
+@font-face {
+    font-family: peyda;
+    src: url(../public/fonts/Peyda/PeydaWeb.ttf);
+}
+*{
+    direction: rtl;
+}
+.upPoster{
+    font-family: yb-bold;
+}
+input{
+    font-family: yb-sbold;
+    padding-top: 5px;
+    padding-right: 28px;
+}
+.badge{
+    margin-top: -40px;
+    font-family: yb-reg;
+}
+.routes{
+    display: inline-block;
+    font-family: yb-bold;
+    font-size: 22px;
+}
+.category{
+    width: 392px;
+    height: 99px;
+    margin-top:141px;
+    margin-right: 33px;
+    border-radius: 19px;
+    font-family: yb-vbold;
+    font-size: 20.74px;
+}
+.c1{
+    margin-right: 170px;
 }
